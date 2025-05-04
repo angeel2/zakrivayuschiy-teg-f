@@ -9,7 +9,6 @@
   --background-image-lines: #d3d3d3;
   --background-image: #e7e7e7, #1a1a1a;
   --content-width: clamp(23.438rem, 100vw, 43.75rem);
-  --content-height: clamp(20.438rem, 80vw, 23rem);
   --border: 2px solid var(--accent-color);
   --mix-blend-color: var(--background-color);
   --heart-fill-color: #ff0000;

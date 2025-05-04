@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="icon" href=".\images\favicon.png"" sizes="48x48">
+    <link rel="icon" href="./images/favicon.png" sizes="48x48"/>
     <link
       rel="icon"
-      href=".\svg\favicon.svg"
+      href="./svg/favicon.svg"
       sizes="any"
       type="image/svg+xml"
     />
@@ -33,7 +33,7 @@
           <span class="label">&lt;/HTML&gt;</span>
           <img
             class="card__image"
-            src=".\images\picture1.png"
+            src="./images/picture1.png"
             alt="Девушка с гитарой под водой"
           />
         </div>
@@ -56,6 +56,7 @@
               height="34"
               viewBox="0 0 39 36"
               fill="none"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -91,8 +92,8 @@
         <div class="card__image-block">
           <div class="label">&lt;/HTML&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture2.png"
+            class="card__image filter-saturate-low"
+            src="./images/picture2.png"
             alt="Нарисованный человек держит в руках яркую звезду"
             loading="lazy"
           />
@@ -153,8 +154,8 @@
         <div class="card__image-block">
           <div class="label">&lt;CSS&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture2.png"
+            class="card__image filter-saturate-high"
+            src="./images/picture2.png"
             alt="Нарисованный человек держит в руках яркую звезду"
             loading="lazy"
           />
@@ -213,8 +214,8 @@
         <div class="card__image-block">
           <div class="label">&lt;desigions&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture3.png"
+            class="card__image filter-hue-rotate"
+            src="./images/picture3.png"
             alt="Две руки тянутся друг к другу"
             loading="lazy"
           />
@@ -275,8 +276,8 @@
         <div class="card__image-block">
           <div class="label">care</div>
           <img
-            class="card__image"
-            src=".\images\picture3.png"
+            class="card__image filter-invert"
+            src="./images/picture3.png"
             alt="Две руки тянутся друг к другу"
             loading="lazy"
           />
@@ -338,8 +339,8 @@
         <div class="card__image-block">
           <div class="label">&lt;support&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture4.png"
+            class="card__image filter-sepia"
+            src="./images/picture4.png"
             alt="Красочный фон с надписью: Всё получится"
             loading="lazy"
           />
@@ -398,8 +399,8 @@
         <div class="card__image-block">
           <div class="label">&lt;lifes-style: none;&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture4.png"
+            class="card__image filter-blur"
+            src="./images/picture4.png"
             alt="Красочный фон с надписью: Всё получится"
             loading="lazy"
           />
@@ -460,8 +461,8 @@
         <div class="card__image-block">
           <div class="label">&lt;experience&gt;</div>
           <img
-            class="card__image"
-            src=".\images\picture5.png"
+            class="card__image filter-complex"
+            src="./images/picture5.png"
             alt="Зеленый луг где пасутся овцы"
             loading="lazy"
           />
@@ -536,12 +537,13 @@
         </svg>
         <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
         <form method="dialog" class="button-form">
-          <button
-            class="dialog__button button"
-            type="button"
-            onclick="window['save-dialog'].close()"
+          <button 
+            class="dialog__button button" 
+            type="submit"
           >
-            <span class="button__text">ок</span>
+            <span class="button__text button__text_close">ок</span>
+          </button>
+        </form>
           </button>
         </form>
       </dialog>
